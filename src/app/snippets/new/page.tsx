@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { db } from '@/app/db'
-import { redirect } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 
 export default function SnippetCreatePage() {
     async function createSnippet(formData: FormData){
@@ -24,6 +24,9 @@ export default function SnippetCreatePage() {
         //redirect back to root root route
         redirect('/');
     }
+
+    // notFound();
+
 
     return (
         <form action={createSnippet}>
