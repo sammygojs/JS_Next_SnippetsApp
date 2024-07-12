@@ -1,5 +1,5 @@
 import React from 'react'
-import {db} from '@/app/db'
+import {db} from '@/db'
 import { Snippet } from '@prisma/client';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';

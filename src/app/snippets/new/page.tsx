@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { db } from '@/app/db'
-import { notFound, redirect } from 'next/navigation';
+import { db } from '@/db'
+import { redirect } from 'next/navigation';
 
 export default function SnippetCreatePage() {
     async function createSnippet(formData: FormData){

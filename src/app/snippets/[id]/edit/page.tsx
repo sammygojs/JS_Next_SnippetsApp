@@ -1,7 +1,7 @@
 import React from 'react'
-import {db} from '@/app/db'
+import {db} from '@/db'
 import { notFound } from 'next/navigation';
-import SnippetEditForm from '@/app/components/snippet-edit-form';
+import SnippetEditForm from '@/components/snippet-edit-form';
 
 
 interface SnippetShowPageProps{
